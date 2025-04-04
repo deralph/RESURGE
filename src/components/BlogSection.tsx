@@ -1,4 +1,3 @@
-import React from "react";
 import revamp from "../assets/revampImage.png";
 
 const blogPosts = [

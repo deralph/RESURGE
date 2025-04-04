@@ -1,7 +1,7 @@
-import DolengaUI from "./pages/landingPage";
+import LandingPage from "./pages/landingPage";
 
 function App() {
-  return <DolengaUI />;
+  return <LandingPage />;
 }
 
 export default App;

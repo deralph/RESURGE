@@ -1,4 +1,3 @@
-import React from "react";
 import { FaShippingFast, FaHeadphones, FaMoneyBillAlt } from "react-icons/fa";
 
 const Features = () => {

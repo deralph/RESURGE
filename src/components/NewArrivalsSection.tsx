@@ -1,4 +1,3 @@
-import React from "react";
 import tees from "../assets/TeesImage.png";
 
 const products = [
