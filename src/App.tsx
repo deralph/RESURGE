@@ -1,7 +1,8 @@
-import LandingPage from "./pages/landingPage";
+import WaitlistPage from "./components/Waitlist";
+// import LandingPage from "./pages/landingPage";
 
 function App() {
-  return <LandingPage />;
+  return <WaitlistPage />;
 }
 
 export default App;
