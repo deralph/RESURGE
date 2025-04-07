@@ -3,6 +3,7 @@
 import waitlist1 from "../assets/waitlist1.jpg";
 import { Toaster } from "react-hot-toast";
 import EmailForm from "../components/EmailForm";
+import { FaInstagram, FaLinkedin, FaTiktok, FaXTwitter } from "react-icons/fa6";
 export default function Home() {
   return (
     <>
@@ -27,6 +28,41 @@ export default function Home() {
             </p>
 
             <EmailForm />
+            <p className=""> Follow us on social media</p>
+            <div className="flex items-center gap-4 mt-4">
+              <a
+                target="_blank"
+                href="https://x.com/resurge_style?s=21"
+                aria-label="X"
+                className=""
+              >
+                <FaXTwitter />
+              </a>
+              {/* <a
+                target="_blank"
+                href="#"
+                aria-label="LinkedIn"
+                className="hover:text-gray-300"
+              >
+                <FaLinkedin />
+              </a> */}
+              <a
+                target="_blank"
+                href="https://www.tiktok.com/@resurge24?_t=ZM-8vKxAs7HARh&_r=1"
+                aria-label="tiktok"
+                className=""
+              >
+                <FaTiktok />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/resurge_stle?igsh=MXU4aGh1bHZydWhzYg%3D%3D&utm_source=qr"
+                aria-label="Instagram"
+                className=""
+              >
+                <FaInstagram />
+              </a>
+            </div>
           </div>
         </main>
       </section>
