@@ -3,7 +3,7 @@
 import waitlist1 from "../assets/waitlist1.jpg";
 import { Toaster } from "react-hot-toast";
 import EmailForm from "../components/EmailForm";
-import { FaInstagram, FaLinkedin, FaTiktok, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaTiktok, FaXTwitter } from "react-icons/fa6";
 export default function Home() {
   return (
     <>
