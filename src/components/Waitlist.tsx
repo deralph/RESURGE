@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <>
       <Toaster />
-      <div className="text-xl font-bold font-montserrat py-3">RESURGE</div>
-      <section className="font-montserrat w-screen h-screen flex flex-col lg:flex-row justify-center items-center gap-6 px-[5%] shadow-inner ">
+
+      <section className="font-montserrat w-screen h-screen flex flex-col lg:flex-row justify-center items-center gap-6 p-[5%] shadow-inner ">
         {/* <div className="md:h-full h-80 bg-[#FCD0A1] relative overflow-hidden"> */}
         <img
           src={waitlist1}
