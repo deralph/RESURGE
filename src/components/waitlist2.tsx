@@ -57,7 +57,7 @@ const Resurge: React.FC = () => {
     >
       <Toaster />
       <div className="content-wrapper flex flex-col items-center justify-center text-center px-4  animate-fadeIn">
-        <h1 className="text-5xl leading-tight mb-4 max-w-3xl font-montserrat font-extrabold text-white">
+        <h1 className="text-5xl leading-tight mb-4 max-w-3xl font-montserrat font-bold text-white">
           They gave you logos.
           <br />
           We give you legacy.
