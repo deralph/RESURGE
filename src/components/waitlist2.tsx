@@ -66,9 +66,9 @@ const Resurge: React.FC = () => {
           They gave you logos.
         </h1>
         <h1 className="text-3xl sm:text-4xl md:text-5xl leading-snug mb-4 max-w-[90vw] font-montserrat font-normal font-bold text-white text-center">
-        We give you you{" "}
+        We give you{" "}
   <span className="relative inline-block">
-    <span className="relative z-10">legacy</span>
+    <span className="relative z-10 font-montserrat font-semibold">legacy</span>.
     
     <svg
       className="absolute bottom-0 left-0 w-full z-0"
