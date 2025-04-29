@@ -2,6 +2,8 @@ import React, { useState, FormEvent } from "react";
 import { toast, Toaster } from "react-hot-toast";
 import { addDoc, collection } from "firebase/firestore";
 import { firestoreDb } from "./firebase"; // adjust the path as neededy
+import resurgeLogo from '../assets/resurge001.png';
+
 
 const Resurge: React.FC = () => {
   const [fullName, setFullName] = useState<string>("");
@@ -56,7 +58,7 @@ const Resurge: React.FC = () => {
       }} 
     >
       <div  className="absolute top-4 sm:top-6 md:top-8 left-4 sm:left-6" >
-        <img src="../src/assets/resurge001.png" alt="Resurge Logo" className="h-8 sm:h-10 md:h-12 lg:h-12 xl:h-12"  />
+        <img src={resurgeLogo} alt="Resurge Logo" className="h-8 sm:h-10 md:h-12 lg:h-12 xl:h-12"  />
       </div>
       <Toaster />
       <div className="content-wrapper flex flex-col items-center justify-center text-center px-4  animate-fadeIn">
