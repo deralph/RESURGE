@@ -1,19 +1,16 @@
 import React from "react";
 import Slider, { CustomArrowProps } from "react-slick";
-import  image from '../../assets/Image.png'
-import { IoArrowBackCircleOutline ,IoArrowForwardCircleOutline } from "react-icons/io5";
+import image from "../../assets/Image.png";
+import {
+  IoArrowBackCircleOutline,
+  IoArrowForwardCircleOutline,
+} from "react-icons/io5";
 
 // Make sure these are imported once in your app (e.g. index.tsx)
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
-interface Memory {
-  id: number;
-  url: string;
-  alt: string;
-}
-
-const mockImages: Memory[] = [
+const mockImages = [
   {
     id: 1,
     url: image,
@@ -31,24 +28,20 @@ const mockImages: Memory[] = [
   },
 ];
 
-const PrevArrow: React.FC<CustomArrowProps> = ({
-  onClick,
-  currentSlide,
-}) => {
+const PrevArrow: React.FC<CustomArrowProps> = ({ onClick, currentSlide }) => {
   const disabled = currentSlide === 0;
   return (
     <IoArrowBackCircleOutline
       type="button"
       aria-label="Previous memory"
       onClick={onClick}
-      disabled={disabled}
       className={`
         absolute -bottom-10 left-1/3
         w-8 h-8 rounded-full bg-white flex items-center justify-center
         ${disabled ? "text-gray-200 cursor-not-allowed" : ""}
       `}
     />
-     );
+  );
 };
 
 const NextArrow: React.FC<CustomArrowProps> = ({
@@ -58,18 +51,17 @@ const NextArrow: React.FC<CustomArrowProps> = ({
 }) => {
   const disabled = currentSlide === slideCount! - 1;
   return (
-    <IoArrowForwardCircleOutline 
+    <IoArrowForwardCircleOutline
       type="button"
       aria-label="Next memory"
       onClick={onClick}
-      disabled={disabled}
       className={`
         absolute -bottom-10 left-2/3
         w-8 h-8 rounded-full bg-white flex items-center justify-center
-        ${disabled ? "text-gray-200 cursor-not-allowed" :""}
+        ${disabled ? "text-gray-200 cursor-not-allowed" : ""}
       `}
     />
-     );
+  );
 };
 
 export const MemoryCarousel: React.FC = () => {

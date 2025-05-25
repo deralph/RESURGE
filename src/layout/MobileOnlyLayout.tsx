@@ -1,7 +1,13 @@
 import React from "react";
-import { MobileOnlyLayoutProps } from "./MobileOnlyLayout.types";
 
- const MobileOnlyLayout: React.FC<MobileOnlyLayoutProps> = ({
+import { ReactNode } from "react";
+
+export interface MobileOnlyLayoutProps {
+  children: ReactNode;
+  errorMessage?: string;
+}
+
+const MobileOnlyLayout: React.FC<MobileOnlyLayoutProps> = ({
   children,
   errorMessage = "Please scan with mobile",
 }) => {
@@ -9,9 +15,7 @@ import { MobileOnlyLayoutProps } from "./MobileOnlyLayout.types";
     <>
       {/* Mobile: render the wrapped content */}
       <div className="flex justify-center block lg:hidden ">
-      <div className=" max-w-[600px]">
-        {children}
-      </div>
+        <div className=" max-w-[600px]">{children}</div>
       </div>
 
       {/* Tablet & up: full‐viewport error */}
@@ -33,4 +37,4 @@ import { MobileOnlyLayoutProps } from "./MobileOnlyLayout.types";
   );
 };
 
-export default MobileOnlyLayout
+export default MobileOnlyLayout;
